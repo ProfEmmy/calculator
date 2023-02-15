@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+body {
+    background-color: hsl(222, 26%, 31%);
+    font-family: 'League Spartan';
+}
+
+main {
+    margin-top: 50px;
+    font-family: 'League Spartan';
+}
+.head_div {
+    display: grid;
+    grid-template-columns: 290px 50px 50px ;
+    text-align: center;
+    margin-bottom: 15px;
+    max-height: 33px;
+    font-family: 'League Spartan';
+}
+
+.flexdiv2 {
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 40px;
+    height: 24px;
+    width: 50px;
+    position: relative;
+    bottom: 23px;
+    font-family: 'League Spartan';
+}
+
+label {
+    margin: 0px;
+}
+
+.label {
+    position: relative;
+    bottom: 20px;
+    margin: 6px;
+}
+
+.theme_labels_div {
+    background-color: hsl(222, 26%, 31%);
+    display: flex;
+}
+
+
+.flexdiv1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme_changer {
+    margin: -1.5px;
+    margin-top: 5px;
+}
+
+input[type='radio']:after {
+    width: 9px;
+    height: 9px;
+    border-radius: 15px;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    background-color: hsl(223, 31%, 20%);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid hsl(223, 31%, 20%);
+}
+
+input[type='radio']:checked:after {
+    width: 9px;
+    height: 9px;
+    border-radius: 15px;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    background-color: hsl(6, 63%, 50%);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid hsl(6, 63%, 50%);
+}
+
+h3 {
+    color: white;
+    margin: 0px;
+    margin-right: 250px;
+    font-family: 'League Spartan';
+}
+
+label {
+    font-size: 10px;
+    color: white;
+    margin: 7px;
+}
+
+.form {
+    display: grid;
+    grid-template-rows: 120px 350px;
+}
+
+.flexdiv3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_field {
+    width: 380px;
+    height: 110px;
+    border-radius: 5px;
+    border-color: hsl(224, 36%, 15%);
+    background-color: hsl(224, 36%, 15%);
+    text-align: right;
+    font-size: 32px;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+    padding-right: 10px;
+    font-family: 'League Spartan';
+}
+
+.flexdiv4 {
+    background-color: hsl(223, 31%, 20%);
+    text-align: center;
+    border-radius: 10px;
+    height: 370px;
+    margin-top: 7px;
+}
+
+.btns_div {
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px;
+    height: auto;
+    margin: 10px;
+    margin-top: 30px;
+    font-family: 'League Spartan';
+}
+
+.btn {
+    width: 70px;
+    height: 55px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-color: hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%);
+    font-family: 'League Spartan';
+    font-size: 24px;
+    font-weight: 800;
+    background-color: hsl(30, 25%, 89%);
+}
+
+.bottom_btns {
+    display: grid;
+    grid-template-columns: 180px 180px;
+    font-family: 'League Spartan';
+}
+
+#reset_btn {
+    width: 160px;
+    background-color: hsl(225, 21%, 49%);
+    border-color: hsl(224, 28%, 35%);
+    color: white;
+    font-family: 'League Spartan';
+}
+
+#del_btn {
+    background-color: hsl(225, 21%, 49%);
+    border-color: hsl(224, 28%, 35%);
+    color: white;
+    font-family: 'League Spartan';
+}
+
+#equalto_btn {
+    width: 160px;
+    background-color: hsl(6, 63%, 50%);
+    border-color: hsl(6, 70%, 34%);
+    color: white;
+    font-family: 'League Spartan';
+}
+
+#equalto_btn:hover {
+    background-color: hsl(6, 70%, 34%);
+}

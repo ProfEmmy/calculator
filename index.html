@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" id="link" href="styles/styles1.css">
+
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { 
+      font-size: 16px;
+      text-align: center;
+      position: fixed;
+      bottom: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <main>
+    <div class="flexdiv1">
+      <div class="head_div">
+        <div class="calc_text_div">
+          <h3>calc</h3>
+        </div>
+
+        <label for="flexdiv2">THEME</label>
+
+        <div class="theme">
+          <div class="theme_labels_div">
+            <label for="theme1" class="label">1</label>
+            <label for="theme2" class="label">2</label>
+            <label for="theme3" class="label">3</label>
+          </div>
+          <div class="flexdiv2" id="flexdiv2">
+            <form class="changers_div">
+              <input type="radio" name="theme_changer" id="radio1" class="theme_changer" onclick="theme1()" checked>
+              <input type="radio" name="theme_changer" id="radio2" class="theme_changer" onclick="theme2()">
+              <input type="radio" name="theme_changer" id="radio3" class="theme_changer" onclick="theme3()">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flexdiv3">
+      <form class="form">
+        <div class="input_div">
+          <input type="text" class="input_field" id="input_field" disabled="disabled">
+        </div>
+        <div class="flexdiv4">
+          <div class="btns_div">
+            <div>
+              <input type="button" value="7" class="btn" onclick="display('7')">
+            </div>
+            <div>
+              <input type="button" value="8" class="btn"onclick="display('8')">
+            </div>
+            <div>
+              <input type="button" value="9" class="btn" onclick="display('9')">
+            </div>
+            <div>
+              <input type="button" value="DEL" class="btn" id="del_btn" onclick="del()">
+            </div>
+            <div>
+              <input type="button" value="4" class="btn" onclick="display('4')">
+            </div>
+            <div>
+              <input type="button" value="5" class="btn" onclick="display('5')">
+            </div>
+            <div>
+              <input type="button" value="6" class="btn" onclick="display('6')">
+            </div>
+            <div>
+              <input type="button" value="+" class="btn" onclick="display('+')">
+            </div>
+            <div>
+              <input type="button" value="1" class="btn" onclick="display('1')">
+            </div>
+            <div>
+              <input type="button" value="2" class="btn" onclick="display('2')">
+            </div>
+            <div>
+              <input type="button" value="3" class="btn" onclick="display('3')">
+            </div>
+            <div>
+              <input type="button" value="-" class="btn" onclick="display('-')">
+            </div>
+            <div>
+              <input type="button" value="." class="btn" onclick="display('.')">
+            </div>
+            <div>
+              <input type="button" value="0" class="btn" onclick="display('0')">
+            </div>
+            <div>
+              <input type="button" value="/" class="btn" onclick="display('/')">
+            </div>
+            <div>
+              <input type="button" value="x" class="btn" onclick="display('*')">
+            </div>
+            <div class="bottom_btns">
+              <div>
+                <input type="button" value="RESET" class="btn" id="reset_btn" onclick="reset()">
+              </div>
+              <div>
+                <input type="button" value="=" class="btn" id="equalto_btn" onclick="find_result()">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="attribution" id="footer">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://gitub.com/profemmy">Emmanuel</a>.
+  </footer>
+</body>
+</html>
